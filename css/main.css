@@ -1,3 +1,4 @@
+
 body {
 	padding: 0;
 	margin: 0;
@@ -6,10 +7,7 @@ body {
 * {
 	box-sizing: border-box;
 }
- header {
-	
 
-}
 .head {
 	width: 100%;
 	height: 750px;
@@ -30,8 +28,8 @@ body {
 .navigate {
 	width: 100%;
 	height: 20px;
-	padding-right: 200px;
-	padding-left: 200px;
+	padding-right: 100px;
+	padding-left: 100px;
 }
 .navigate ul {
 	display: flex;
@@ -39,9 +37,10 @@ body {
 }
 .navigate ul li {
 	flex: 2;
-	list-style: none;
+	list-style: none; 
     display: flex;
-	justify-content: center;
+	justify-content: space-around;
+
 }
 .navigate a {
 	color: #fff;
@@ -186,7 +185,6 @@ body {
     text-align: left;
 }
 .box svg {
-	display: ;
 	margin-top: 60px;
     margin-left: 240px;
 }
@@ -429,6 +427,7 @@ button > span {
 	background-color: #1e1c1c;
 	display: flex;
 	justify-content: space-around;
+
 }
 .left_sidebar {
     margin-top: 92px;
@@ -445,6 +444,20 @@ button > span {
     line-height: 29px;
     align-items: center;
     text-transform: uppercase;
+}
+.img_row {
+
+}
+.img_row > a {
+	display: inline-block;
+	background: #87D9F1;
+	padding: 13px;
+	border-radius: 50%;
+	margin-right: 25px;
+	margin-bottom: 44px;
+}
+.img_row > a:last-child {
+	padding: 12px 20px 12px 20px;
 }
 .list_info {
 	padding-top: 105px;
@@ -486,7 +499,8 @@ button > span {
 .s_footer {
 	display: none;
 }
-@media (max-width: 575.98px){
+
+@media screen and (max-width: 575.98px){
    .blockwrapp {
    	display: none;
    } 
@@ -810,7 +824,62 @@ button > span {
     text-decoration: none;
 }
 .s_img_row {
-	margin-top: 15px;
+	margin-top: 12px;
 	margin-bottom: 25px;
+	padding: 0;
+}
+.s_img_row > a {
+	display: inline-block;
+	background: #87D9F1;
+	padding: 13px;
+	border-radius: 50%;
+	margin-right: 25px;
+	margin-bottom: 44px;
+}
+.s_img_row > a:last-child {
+	padding: 12px 20px 12px 20px;
+}
+@media (min-width: 576px) and (max-width: 991.98px){
+
+.navigate {
+	width: 900px;
+	display: flex;
+	justify-content: center;
+	margin-left: 30px;
+}
+.navigate ul {
+    
+	
+}
+.navigate ul li {
+	padding-left: 6rem;
+    flex: ;
+    
+}
+.navigate a {
+	font-size: 14px;
+}
+.main_info {
+	margin-left: -10%;
+}
+.infoblock {
+	width: 250px;
+	height: 125px;
+}
+.box span {
+	width: 210px;
+	height: 40px;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.box svg {
+	margin-top: 50px;
+    margin-left: 180px;
+}
+.footer {
+	justify-content: space-around;
+}
+.left_sidebar {
+ margin-left: 12%;
 }
 }
