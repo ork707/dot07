@@ -23,10 +23,22 @@
 			</ul>
 				</nav>
 				<nav>
-				<div class="burger">	
+				<div class="burger">
+				      <div id="showmenu" onclick="show()">
                       <span></span>
                       <span></span>
                       <span></span>
+                      </div>
+                      <ul id="dragonfly">
+                      	<li id="close" onclick="hide()"><img src="img/close.png" alt=""></li>
+                      	<li><a href="#">О компании</a></li>
+                      	<li><a href="#">Услуги</a></li>
+                      	<li><a href="#">Информация</a></li>
+                      	<li><a href="#">Новости</a></li>
+                      	<li><a href="#">FAQ</a></li>
+                      	<li><a href="#">Контакты</a></li>
+                      	<li><a href="#">Личный кабинет</a></li>
+                      </ul>	
                 <div class="burger_title">черная стрела</div>
                 <div class="icon_small"><img  width="31px" height="34px" src="img/icon.png" alt=""></div>
                  </div>	
@@ -301,6 +313,42 @@
             </div>
         </div>
      </footer> 
-     </div>            
+     </div> 
+     <script>
+     	/*let y = 1;
+     	function show() {
+     		if (y == 1) {
+               document.getElementById('dragonfly').style.left = "0px";
+               y = 0;
+     		} else if (y == 0) {
+               document.getElementById('dragonfly').style.left = "-190px";
+               y = 1;
+     		}
+     	}
+     	let x = 1;
+     	function hide() {
+     		if (x == 1) {
+               document.getElementById('dragonfly').style.left = "0px";
+               x = 0;
+     		} else if (x == 0) {
+               document.getElementById('dragonfly').style.left = "-190px";
+               x = 1;
+     		}
+     	} */
+         
+     	function show() {
+     		 
+               document.getElementById('dragonfly').style.left = "0px";
+            
+     	}
+
+     	function hide() {
+     		
+               document.getElementById('dragonfly').style.left = "-190px";
+               
+     		}	
+
+     </script>  
+           
 </body>
 </html>
